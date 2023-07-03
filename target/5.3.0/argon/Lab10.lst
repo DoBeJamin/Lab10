@@ -247,19 +247,19 @@ void loop() {
       Serial.println("Button state is HIGH");
    b4122:	f000 fbbd 	bl	b48a0 <_Z16_fetch_usbserialv>
    b4126:	4907      	ldr	r1, [pc, #28]	; (b4144 <loop+0x6c>)
+    }
   }
     
 
   }
 }
-
    b4128:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
-    }
+      Serial.println("Button state is LOW");
    b412c:	f000 ba05 	b.w	b453a <_ZN5Print7printlnEPKc>
    b4130:	f000 fbb6 	bl	b48a0 <_Z16_fetch_usbserialv>
    b4134:	4904      	ldr	r1, [pc, #16]	; (b4148 <loop+0x70>)
    b4136:	e7f7      	b.n	b4128 <loop+0x50>
-
+}
    b4138:	bd10      	pop	{r4, pc}
    b413a:	bf00      	nop
    b413c:	2003e6d9 	.word	0x2003e6d9
@@ -293,7 +293,7 @@ public:
 SYSTEM_THREAD(ENABLED);
    b4160:	4621      	mov	r1, r4
    b4162:	2001      	movs	r0, #1
-
+}
    b4164:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
 SYSTEM_THREAD(ENABLED);
    b4168:	f000 b8b4 	b.w	b42d4 <system_thread_set_state>

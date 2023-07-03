@@ -28,10 +28,9 @@ void loop() {
     button_state = Serial1.read();
 
     if (button_state){
-    Serial.println("Button state is HIGH");
-    }
-    else{
-        Serial.println("Button state is LOW");
+      Serial.println("Button state is HIGH");
+    } else{
+      Serial.println("Button state is LOW");
     }
   }
     
